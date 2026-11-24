@@ -19,6 +19,7 @@ import { fileURLToPath } from 'node:url';
 import { boardIssue, buildRadar, dataScript, parseSnapshot } from './lib/model.ts';
 import { buildDossier } from './vendor/makefun-board.ts';
 
+/** Root directory of this entry (resolved at runtime). */
 const here = fileURLToPath(new URL('.', import.meta.url));
 
 /** The scorer's own caps (reference/gate.json): the text cap shapes the bytes, the rest refuse. */
